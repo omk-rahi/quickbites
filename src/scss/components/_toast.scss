@@ -1,0 +1,53 @@
+@use "../utils/variables" as *;
+
+.toast {
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+  z-index: 10;
+
+  background-color: #fff;
+  border-radius: 100rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.6rem 2.4rem;
+  box-shadow: 0 1rem 2rem 1rem rgba($primary-text-color, 0.2);
+
+  animation: slideIn 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  display: flex;
+  gap: 0.8rem;
+
+  &__icon {
+    color: #fff;
+    width: 3.2rem;
+  }
+
+  &__message {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    font-weight: $font-bold;
+    color: #fff;
+  }
+
+  &__success {
+    background-color: $color-success;
+  }
+
+  &__error {
+    background-color: $color-error;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    right: -50%;
+  }
+
+  100% {
+    right: 4rem;
+  }
+}

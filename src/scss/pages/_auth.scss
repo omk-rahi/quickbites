@@ -1,0 +1,33 @@
+@use "../utils/variables" as *;
+
+.login,
+.register {
+  background-color: $light-color-1;
+  height: calc(100vh - 7.2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-size: 2.4rem;
+    color: $primary-color;
+    margin-bottom: 1.6rem;
+    text-align: center;
+  }
+
+  &__form {
+    background-color: #fff;
+    border-radius: 0.8rem;
+    padding: 3.2rem 4rem;
+    box-shadow: 0 0.4rem 0.8rem rgba($primary-text-color, 0.1);
+    width: 36rem;
+    margin-bottom: 16rem;
+  }
+
+  &__other {
+    font-size: 1.6rem;
+    color: $secondary-text-color;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        
+        title QuickBite | Online food delivery
+
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="css/main.css")
+
+        script(src="/js/bundle.js", defer) 
+    body 
+
+        header.header
+            .container.flex.justify-between.align-center
+                .header__brand 
+                    a(href="/") 
+                        h1.header__brand-name QuickBite
+                nav.header__nav 
+                    ul.header__nav-items.flex.align-center
+                        li.header__nav-item 
+                            a.header__nav-link(href="/") Home
+                        li.header__nav-item 
+                            a.header__nav-link(href="/menu") Menu
+                        li.header__nav-item 
+                            a.header__nav-link(href="/#popular") Popular
+                        if !user
+                            li.header__nav-item 
+                                a.header__nav-link.btn.btn--primary(href="/login") Login
+                        else 
+                             li.header__nav-item 
+                                a.header__nav-link(href="/orders") Orders 
+                             li.header__nav-item 
+                                a.header__nav-link.btn.btn--primary(href="/cart")
+                                    svg.w-6.h-6.btn__svg(xmlns='http://www.w3.org/2000/svg' fill='none' viewbox='0 0 24 24' stroke-width='1.5' stroke='currentColor')
+                                        path(stroke-linecap='round' stroke-linejoin='round' d='M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z')
+
+                                    if user.cart.at(0)
+                                        span.cart-count #{user.cart.at(0).items.length}
+                                    else 
+                                        span.cart-count #{0}
+
+
+        main.main 
+            block main

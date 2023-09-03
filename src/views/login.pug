@@ -1,0 +1,21 @@
+extends base
+
+block main 
+
+    section.login
+        .container 
+            form.form.login__form(action="#", method="POST")
+                h2.login__heading Welcome Back
+
+                span.form__error
+                .form__group 
+                    input.form__input.login-email(type="email", placeholder="Email", required)
+
+                .form__group 
+                    input.form__input.login-password(type="password", placeholder="Password", required)
+
+                button.btn.btn--primary.btn--full.login-btn(type="submit") Login
+                
+                p.login__other 
+                    | Don't have an account ? 
+                    a.link--primary(href="/register") Register

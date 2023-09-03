@@ -1,0 +1,29 @@
+@use "../utils/variables" as *;
+
+.form {
+  &__group {
+    margin-bottom: 1.6rem;
+  }
+
+  &__input {
+    border: 1px solid $light-color-3;
+    border-radius: 100rem;
+    padding: 1.2rem 3.2rem;
+    font-family: inherit;
+    width: 100%;
+    font-size: 1.6rem;
+
+    &:focus {
+      outline: 1px solid $primary-color;
+    }
+  }
+
+  &__error {
+    font-size: 1.4rem;
+    padding: 1rem;
+    display: inline-block;
+    font-weight: $font-bold;
+    color: $color-error;
+    text-transform: capitalize;
+  }
+}

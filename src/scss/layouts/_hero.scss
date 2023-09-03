@@ -1,0 +1,45 @@
+@use "../utils/variables" as *;
+
+.hero {
+  background-color: $light-color-1;
+  height: 75vh;
+
+  &__content,
+  &__img-container {
+    flex: 1;
+  }
+
+  &__content {
+    padding-bottom: 2.4rem;
+  }
+
+  &__heading {
+    font-size: 4.8rem;
+  }
+
+  &__lead {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: $secondary-text-color;
+  }
+
+  &__form {
+    margin-top: 2.4rem;
+    background-color: #fff;
+    width: 50%;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &-input {
+      padding: 1.6rem 3.2rem;
+      border-radius: 100rem;
+      border: 0;
+      outline: none;
+      font-family: inherit;
+      font-size: 1.6rem;
+    }
+  }
+}

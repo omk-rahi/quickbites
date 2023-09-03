@@ -1,0 +1,56 @@
+@use "../utils/variables" as *;
+
+.orders {
+  height: calc(100vh - 7.2rem);
+  background-color: $light-color-1;
+  padding-top: 3.2rem;
+
+  &__empty {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-image {
+      width: 20rem;
+    }
+  }
+
+  &__header {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $light-color-3;
+    padding-bottom: 1.6rem;
+  }
+
+  &__items {
+    background-color: #fff;
+    margin-top: 2.4rem;
+    padding: 2.4rem 3.2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba($primary-text-color, 0.1);
+    max-height: 70vh;
+    overflow-y: auto;
+    font-size: 2rem;
+    flex: 1;
+
+    &-header {
+      margin-bottom: 1.6rem;
+      border-bottom: 1px solid $light-color-3;
+      padding-bottom: 1.6rem;
+
+      & span {
+        font-size: 2rem;
+        flex: 1;
+        text-align: center;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+
+    & span {
+      flex: 1;
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+}

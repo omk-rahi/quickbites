@@ -1,0 +1,35 @@
+@use "../utils/variables" as *;
+
+.header {
+  padding-top: 1.6rem;
+  height: 7.2rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.2rem rgba($color: $primary-text-color, $alpha: 0.1);
+  margin-bottom: 0;
+  z-index: 100;
+
+  &__brand-name {
+    color: $primary-color;
+    font-weight: $font-bold;
+  }
+
+  &__nav-items {
+    gap: 3.2rem;
+  }
+
+  &__nav-link {
+    &:link,
+    &:visited {
+      font-size: $font-size-3;
+      color: $secondary-text-color;
+      transition: $smooth;
+    }
+
+    &:hover,
+    &:active {
+      color: $primary-color;
+    }
+  }
+}

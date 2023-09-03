@@ -1,0 +1,45 @@
+extends base
+
+block main 
+    section.cart
+        if user.cart.at(0)
+            .container 
+                .flex.justify-between.cart__header
+                    h2 Shopping Cart
+                    h2 #{user.cart.at(0).items.length} Items
+                .flex.gap-4
+                    .cart__items
+                        .cart__items-header.flex.justify-between 
+                            span Item 
+                            span Price 
+                            span Quantity 
+                            span Total
+                        
+                        each item in user.cart.at(0).items
+                            .cart__item 
+                                .flex.justify-between.align-center
+                                    .cart__image-container
+                                        img.cart__image(src=`/img/foods/${item.itemId.image}`, alt=`${item.itemId.name}`)
+                                    span ₹ #{item.itemId.price}
+                                    span #{item.quantity}
+                                    span ₹ #{item.subTotal}
+
+
+                    .cart__checkout
+                        .flex.justify-between.align-center.mb-2 
+                            h2 Checkout
+                            span.cart__checkout-total ₹&nbsp; 
+                                span.bold #{user.cart.at(0).total}
+
+                        form.checkout(action="#") 
+                            .form__group
+                                input.form__input.phone(type="text", placeholder="Enter your mobile number", required)
+                            .form__group
+                                input.form__input.address(type="text", placeholder="Enter your shipping address", required)
+                            .flex.justify-between 
+                                span &nbsp;
+                                button.btn.btn--primary.flex-end Order Now
+        else 
+            .container.cart__empty
+                h2 Your shopping cart is empty
+                img.cart__empty-image(src="/img/empty-cart.svg", alt="Empty cart image")

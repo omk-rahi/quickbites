@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Paneer Tikka Burger",
+    "description": "Spiced paneer tikka patty, lettuce, onion, special sauce",
+    "price": 150,
+    "image": "burger.jpg"
+  },
+  {
+    "name": "Masala Dosa",
+    "description": "Dosa stuffed with potato masala, chutneys, rolled like a wrap",
+    "price": 120,
+    "image": "dosa.jpg"
+  },
+  {
+    "name": "Chole Bhature",
+    "description": "Fried bread (bhature) with spicy chickpea curry (chole)",
+    "price": 180,
+    "image": "chhole.jpg"
+  },
+  {
+    "name": "Fried Chicken",
+    "description": "Fried chicken, onions, tomatoes, chutneys",
+    "price": 200,
+    "image": "fried-chicken.jpg"
+  },
+  {
+    "name": "Chicken Biryani",
+    "description": "Flavorful rice cooked with mixed vegetables and aromatic spices",
+    "price": 220,
+    "image": "biryani.jpg"
+  },
+  {
+    "name": "Pav Bhaji",
+    "description": "Mashed mixed vegetables in spicy gravy, served with soft buns",
+    "price": 130,
+    "image": "pav-bhaji.jpg"
+  },
+  {
+    "name": "Chicken Roll",
+    "description": "Grilled chicken, onions, peppers, wrapped in a paratha",
+    "price": 160,
+    "image": "chicken-roll.jpg"
+  },
+  {
+    "name": "Masala Pasta",
+    "description": "Masala pasta topped with chutneys and yogurt",
+    "price": 90,
+    "image": "pasta.jpg"
+  },
+  {
+    "name": "Pani Puri",
+    "description": "Hollow puris filled with spicy and tangy flavored water, chutneys, and potatoes",
+    "price": 70,
+    "image": "pani-puri.jpg"
+  },
+  {
+    "name": "Smoked Momos",
+    "description": "Smoked momos with chutneys, and onions.  ",
+    "price": 280,
+    "image": "momos.jpg"
+  },
+  {
+    "name": "French Fries",
+    "description": "Spicy potato fries served with chutneys",
+    "price": 80,
+    "image": "fries.jpg"
+  },
+  {
+    "name": "Tandoori Chicken",
+    "description": "Tandoori Chicken, onions, mint chutney in a wrap",
+    "price": 180,
+    "image": "tandoori-chicken.jpg"
+  },
+  {
+    "name": "Samosa Chaat",
+    "description": "Crispy samosas topped with chole, chutneys, and yogurt",
+    "price": 100,
+    "image": "samosa.jpg"
+  },
+  {
+    "name": "Idli Vada",
+    "description": "Idli vada with sambhar and white chutneys",
+    "price": 150,
+    "image": "idli.jpg"
+  },
+  {
+    "name": "Chicken Pizza",
+    "description": "Chicken cooked with flavorful chicken and spices",
+    "price": 250,
+    "image": "pizza.jpg"
+  },
+  {
+    "name": "Cheese Sandwitch",
+    "description": "Cheese sandwitch, onions, bell peppers in taco shells",
+    "price": 180,
+    "image": "sandwitch.jpg"
+  },
+  {
+    "name": "Gulab Jamun",
+    "description": "Gulab jamun served with ice cream, nuts, and rose syrup",
+    "price": 120,
+    "image": "gulab-jamun.jpg"
+  },
+  {
+    "name": "Manchurian Noodles",
+    "description": "Spicy noodles with manchurian and salad",
+    "price": 150,
+    "image": "noodles.jpg"
+  }
+]

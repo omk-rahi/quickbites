@@ -1,0 +1,43 @@
+{
+  "name": "quickbites",
+  "version": "1.0.0",
+  "description": "Online food delivery website",
+  "main": "server.js",
+  "scripts": {
+    "webpack:dev": "webpack --watch",
+    "webpack:build": "webpack",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "Online food delivery"
+  ],
+  "author": "Omkar Rahi",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.10",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "nodemon": "^3.0.1",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "bcrypt": "^5.1.1",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.5",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "validator": "^13.11.0"
+  }
+}

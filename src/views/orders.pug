@@ -1,0 +1,30 @@
+extends base
+
+block main
+        .orders
+            .container
+                if orders.length > 0
+                    h2.orders__header Order history
+                    .flex.gap-4
+                            .orders__items
+                                .orders__items-header.flex.justify-between
+                                    span Order Id 
+                                    span Items 
+                                    span Total 
+                                    span Date
+
+                                each order in orders
+                                    .orders__item 
+                                        .flex.justify-between
+                                            span ##{order.id}
+                                            span #{order.items.at(0).itemId.name} 
+                                                if order.items.length > 1
+                                                    | +#{order.items.length - 1} more
+                                            span ₹ #{order.total}
+                                            span #{new Date(order.createdAt).toLocaleString('en-in', {year: 'numeric', month: 'numeric', day: 'numeric'})}
+
+
+                else 
+                    .container.orders__empty
+                        h2 You haven't placed any orders yet.
+                        img.orders__empty-image(src="/img/empty-cart.svg", alt="Empty cart image")

@@ -1,0 +1,38 @@
+extends base
+
+block main
+    section.hero 
+        .container.height-full.flex.align-center
+            .hero__content
+                h1.hero__heading Satisfy Your Cravings <br>at 
+                    span.primary-text QuickBite.
+                p.hero__lead Your one-stop destination for quick and delicious<br>food on the go!
+
+                form.hero__form.flex(action="/" method="POST", autocomplete="off") 
+                    .hero__form-group 
+                        input.hero__form-input(type="text", name="search", placeholder="Search, anything")
+                    .hero__form-group 
+                        input.hero__form-input.btn.btn--primary(type="submit", value="Search")
+
+            .hero__img-container
+                img.hero__img(src="/img/hero-2.png", alt="Food image")
+
+
+    section.popular-items#popular
+        .container 
+            h1.mb-3 Popular items
+
+            .items 
+                each menu in menus
+                    .item 
+                        .item__img-container
+                            img.item__img(src=`/img/foods/${menu.image}`, alt=`${menu.name}`)
+                        .item__content 
+                            .flex.justify-between
+                                h2.item__title #{menu.name}
+                                h3.item__price ₹#{menu.price}
+                            p.item__description #{menu.description}
+                            button.btn.btn--primary-outline.btn--full.add-to-cart(data-item=`${menu.id}`) Add to Cart
+
+            .text-center 
+                a.link--primary.popular-items__more(href="/menu") See all items &rarr;

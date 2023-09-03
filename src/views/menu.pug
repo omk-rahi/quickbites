@@ -1,0 +1,18 @@
+extends base
+
+block main 
+    section.menu
+        .container 
+            h1.mb-3 All items
+
+            .items 
+                each menu in menus
+                    .item 
+                        .item__img-container
+                            img.item__img(src=`/img/foods/${menu.image}`, alt=`${menu.name}`)
+                        .item__content 
+                            .flex.justify-between
+                                h2.item__title #{menu.name}
+                                h3.item__price ₹#{menu.price}
+                            p.item__description #{menu.description}
+                            button.btn.btn--primary-outline.btn--full.add-to-cart(data-item=`${menu.id}`) Add to Cart
