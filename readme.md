@@ -12,8 +12,8 @@ The platform aims to provide a seamless user experience for both customers and r
 
 ## Project Demo
 
-    ![Project demo image](https://github.com/omk-rahi/quickbites/blob/main/public/img/project-demo.png)
-    [Live Demo](https://quickbites-kj6z.onrender.com/) - Click here to view the live demo.
+![Project demo image](https://github.com/omk-rahi/quickbites/blob/main/public/img/project-demo.png)
+[Live Demo](https://quickbites-kj6z.onrender.com/) - Click here to view the live demo.
 
 ## Technology Used
 
