@@ -42,7 +42,7 @@ Quick Bites is an online food delivery website where users can place orders for 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/quick-bites.git
+   git clone https://github.com/omk-rahi/quickbites.git
    cd quick-bites
    ```
 
