@@ -1,19 +1,75 @@
 # QuickBites - Online Food Delivery Website
 
-## Technologies used
+Quick Bites is an online food delivery website where users can browse local restaurants, place orders for delivery or pickup, and track the status of their orders in real time.
+The platform aims to provide a seamless user experience for both customers and restaurants.
 
-### Frontend
+## Table of Contents
 
-- Html
-- Css
-- JavaScript
-- Scss
-- Webpack
+- [Project Demo](#project-demo)
+- [Technology Used](#technology-used)
+- [Features](#features)
+- [Installation and Setup](#installation-and-setup)
+- [Environment Variables](#environment-variables)
 
-### Backennd
+## Project Demo
 
-- Node.js
-- Express
-- MongoDB
-- Mongoose
-- PUG
+[Live Demo] - Link to live demo if hosted
+
+## Technology Used
+
+- **Frontend**:
+
+  - HTML5
+  - CSS3
+  - JavaScript
+
+- **Backend**:
+
+  - Node.js
+  - Express.js
+  - MongoDB (for database)
+
+- **Other Tools**:
+  - JWT for user authentication
+  - PUG for Templating
+
+## Features
+
+- User authentication and authorization
+- Add to cart, order food for delivery/pickup
+
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/quick-bites.git
+   cd quick-bites
+   ```
+
+2. Install the dependencies
+
+   ```bash
+   npm install
+   ```
+
+3. Set up MongoDB
+
+   - Make sure you have MongoDB installed and running.
+   - Create a new database named quickbites.
+
+4. Set environment variables
+
+   ```bash
+   MONGO_URI=your_mongo_connection_string
+   JWT_SECRET=your_jwt_secret_key
+   JWT_EXPIRE_TIME=your_jwt_secret_key
+   ```
+
+5. Run the project
+
+   ```bash
+   npm start
+   ```
+
+Thank you!
