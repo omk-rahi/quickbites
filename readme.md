@@ -9,7 +9,6 @@ The platform aims to provide a seamless user experience for both customers and r
 - [Technology Used](#technology-used)
 - [Features](#features)
 - [Installation and Setup](#installation-and-setup)
-- [Environment Variables](#environment-variables)
 
 ## Project Demo
 
