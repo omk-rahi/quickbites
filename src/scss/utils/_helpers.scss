@@ -1,8 +1,59 @@
 @use "../utils/variables" as *;
 
-.container {
-  max-width: 128rem;
-  margin: 0 auto;
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 36%;
+  }
+
+  .container {
+    padding: 0 8rem;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .hero__form {
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+
+  .container {
+    padding: 0 8rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hero__form {
+    left: 4%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 45%;
+  }
+
+  .hero__form {
+    left: 6%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .container {
+    max-width: 1200px;
+    padding: 0;
+  }
+
+  .hero__form {
+    left: 4%;
+  }
 }
 
 .flex {

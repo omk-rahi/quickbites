@@ -38,6 +38,7 @@
     "mongoose": "^7.4.5",
     "morgan": "^1.10.0",
     "pug": "^3.0.2",
+    "quickbites": "file:",
     "validator": "^13.11.0"
   }
 }

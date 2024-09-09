@@ -13,7 +13,7 @@ const data = JSON.parse(
 );
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/quick-bites")
+  .connect("mongodb://127.0.0.1:27017/quickbites")
   .then(() => console.log("CONNECTED"));
 
 Menu.create(data).then(() => console.log("DATA ADDED"));
