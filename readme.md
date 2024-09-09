@@ -1,6 +1,6 @@
 # QuickBites - Online Food Delivery Website
 
-Quick Bites is an online food delivery website where users can , place orders for delivery and track the status of their orders in real time.
+Quick Bites is an online food delivery website where users can place orders for delivery and track the status of their orders in real time.
 
 ## Table of Contents
 
