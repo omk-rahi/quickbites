@@ -62,7 +62,7 @@ Quick Bites is an online food delivery website where users can place orders for 
    ```bash
    MONGO_URI=your_mongo_connection_string
    JWT_SECRET=your_jwt_secret_key
-   JWT_EXPIRE_TIME=your_jwt_secret_key
+   JWT_EXPIRE_TIME=your_jwt_expire_time
    ```
 
 5. Run the project
