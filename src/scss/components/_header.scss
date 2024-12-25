@@ -62,10 +62,12 @@
       padding: 3.2rem 0;
       height: 0;
       opacity: 0;
+      display: none;
     }
   }
 
   &__nav--active {
+    display: flex;
     height: auto !important;
     opacity: 1 !important;
     border-bottom: 1px solid $light-color-3;

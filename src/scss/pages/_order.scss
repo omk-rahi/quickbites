@@ -31,6 +31,10 @@
     font-size: 2rem;
     flex: 1;
 
+    @media screen and (max-width: 425px) {
+      display: none;
+    }
+
     &-header {
       margin-bottom: 1.6rem;
       border-bottom: 1px solid $light-color-3;
@@ -44,6 +48,15 @@
     }
   }
 
+  &__items-small {
+    display: none;
+    width: 100%;
+
+    @media screen and (max-width: 425px) {
+      display: block;
+    }
+  }
+
   &__item {
     margin-bottom: 2rem;
 
@@ -52,5 +65,15 @@
       text-align: center;
       font-size: 2rem;
     }
+  }
+
+  &__item-small {
+    background-color: #fff;
+    margin-top: 2.4rem;
+    padding: 2.4rem 3.2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba($primary-text-color, 0.1);
+    width: 100%;
+    font-size: 1.6rem;
   }
 }

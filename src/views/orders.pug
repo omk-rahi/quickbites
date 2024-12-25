@@ -22,7 +22,19 @@ block main
                                                     | +#{order.items.length - 1} more
                                             span ₹ #{order.total}
                                             span #{new Date(order.createdAt).toLocaleString('en-in', {year: 'numeric', month: 'numeric', day: 'numeric'})}
-
+                            .orders__items-small
+                                each order in orders
+                                    .orders__item-small 
+                                            p Order Id :
+                                                span ##{order.id}
+                                            p Items :
+                                                span #{order.items.at(0).itemId.name} 
+                                                if order.items.length > 1
+                                                    | +#{order.items.length - 1} more
+                                            p Total :
+                                                span ₹ #{order.total}
+                                            p Order Date :
+                                                span #{new Date(order.createdAt).toLocaleString('en-in', {year: 'numeric', month: 'numeric', day: 'numeric'})}
 
                 else 
                     .container.orders__empty

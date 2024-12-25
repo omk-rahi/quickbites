@@ -22,6 +22,10 @@
     box-shadow: 0 0.4rem 0.8rem rgba($primary-text-color, 0.1);
     width: 36rem;
     margin-bottom: 16rem;
+
+    @media screen and (max-width: 425px) {
+      width: 42rem;
+    }
   }
 
   &__other {
