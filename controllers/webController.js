@@ -9,7 +9,11 @@ exports.index = async (req, res) => {
 };
 
 exports.menu = async (req, res) => {
-  const menus = await Menu.find().sort("price");
+  const { search } = req.query;
+  let menus;
+  if (search)
+    menus = await Menu.find({ $text: { $search: search } }).sort("price");
+  else menus = await Menu.find().sort("price");
   res.render("menu", { menus });
 };
 
