@@ -28,3 +28,9 @@ if (items) {
 const checkOutForm = document.querySelector(".checkout");
 
 if (checkOutForm) checkOutForm.addEventListener("submit", checkout);
+
+document.querySelector(".header__toggle").addEventListener("click", () => {
+  const nav = document.querySelector(".header__nav");
+
+  nav.classList.toggle("header__nav--active");
+});

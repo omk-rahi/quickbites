@@ -15,8 +15,72 @@
     font-weight: $font-bold;
   }
 
+  &__toggle {
+    display: block;
+    height: 3px;
+    width: 3.8rem;
+    border-radius: 2.4rem;
+    position: relative;
+    background-color: $secondary-text-color;
+
+    @media screen and (max-width: 425px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 425px) {
+      display: none;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 3.8rem;
+      border-radius: 2.4rem;
+      position: absolute;
+      background-color: inherit;
+    }
+
+    &::after {
+      bottom: 1.2rem;
+    }
+    &::before {
+      top: 1.2rem;
+    }
+  }
+
+  &__nav {
+    @media screen and (max-width: 425px) {
+      position: absolute;
+      display: block;
+      background-color: #fff;
+      width: 100%;
+      flex-direction: column;
+      top: 7.2rem;
+      left: 0;
+      padding: 3.2rem 0;
+      height: 0;
+      opacity: 0;
+    }
+  }
+
+  &__nav--active {
+    height: auto !important;
+    opacity: 1 !important;
+    border-bottom: 1px solid $light-color-3;
+    z-index: 100;
+  }
+
   &__nav-items {
     gap: 3.2rem;
+
+    @media screen and (max-width: 425px) {
+      display: flex;
+      background-color: #fff;
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
   &__nav-link {

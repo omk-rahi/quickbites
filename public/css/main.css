@@ -204,8 +204,69 @@ small,
   color: #fd7e14;
   font-weight: 700;
 }
+.header__toggle {
+  display: block;
+  height: 3px;
+  width: 3.8rem;
+  border-radius: 2.4rem;
+  position: relative;
+  background-color: #868e96;
+}
+@media screen and (max-width: 425px) {
+  .header__toggle {
+    display: block;
+  }
+}
+@media screen and (min-width: 425px) {
+  .header__toggle {
+    display: none;
+  }
+}
+.header__toggle::after, .header__toggle::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 3.8rem;
+  border-radius: 2.4rem;
+  position: absolute;
+  background-color: inherit;
+}
+.header__toggle::after {
+  bottom: 1.2rem;
+}
+.header__toggle::before {
+  top: 1.2rem;
+}
+@media screen and (max-width: 425px) {
+  .header__nav {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    flex-direction: column;
+    top: 7.2rem;
+    left: 0;
+    padding: 3.2rem 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+.header__nav--active {
+  height: auto !important;
+  opacity: 1 !important;
+  border-bottom: 1px solid #dee2e6;
+  z-index: 100;
+}
 .header__nav-items {
   gap: 3.2rem;
+}
+@media screen and (max-width: 425px) {
+  .header__nav-items {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .header__nav-link:link, .header__nav-link:visited {
   font-size: 1.8rem;
@@ -327,8 +388,18 @@ small,
   background-color: #f8f9fa;
   height: 75vh;
 }
+@media screen and (max-width: 425px) {
+  .hero {
+    height: 45vh;
+  }
+}
 .hero__content, .hero__img-container {
   flex: 1;
+}
+@media screen and (max-width: 425px) {
+  .hero__img-container {
+    display: none;
+  }
 }
 .hero__content {
   padding-bottom: 2.4rem;
@@ -351,6 +422,21 @@ small,
   align-items: center;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .hero__form {
+    left: 5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero__form {
+    left: 6rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero__form {
+    left: 8rem;
+  }
+}
 .hero__form-input {
   padding: 1.6rem 3.2rem;
   border-radius: 100rem;
@@ -371,6 +457,16 @@ small,
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4.8rem;
+}
+@media screen and (max-width: 43em) {
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 38em) {
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .item {

@@ -4,6 +4,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4.8rem;
+
+  @media screen and (max-width: 43em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 38em) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .item {

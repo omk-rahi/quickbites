@@ -4,9 +4,19 @@
   background-color: $light-color-1;
   height: 75vh;
 
+  @media screen and (max-width: 425px) {
+    height: 45vh;
+  }
+
   &__content,
   &__img-container {
     flex: 1;
+  }
+
+  &__img-container {
+    @media screen and (max-width: 425px) {
+      display: none;
+    }
   }
 
   &__content {
@@ -32,6 +42,18 @@
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media screen and (max-width: 768px) {
+      left: 5rem;
+    }
+
+    @media screen and (max-width: 425px) {
+      left: 6rem;
+    }
+
+    @media screen and (max-width: 320px) {
+      left: 8rem;
+    }
 
     &-input {
       padding: 1.6rem 3.2rem;
